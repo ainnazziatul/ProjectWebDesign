@@ -1,0 +1,499 @@
+* {
+  box-sizing: border-box;
+  
+  }
+  /* Style the body */
+  body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  }
+  table{
+    background-color: #bb74b2;
+  color: rgb(20, 20, 20);
+  }
+  label{
+  color: rgb(14, 13, 13);
+  }
+  td{
+  font-size: 25px;
+  text-align: center;
+  }
+  /* Header/logo Title */
+  .header {
+  padding: 30px;
+  text-align: center;
+  background-image: url('image/back.png');
+  color: white;
+  }
+  .centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  }
+  .container {
+  position: relative;
+  text-align: center;
+  color: white;
+  }
+  /* Increase the font size of the heading */
+  .header h1 {
+  font-size: 40px;
+  }
+  /* Style the top navigation bar */
+  .navbar {
+  overflow: hidden;
+  background-color: rgb(249, 244, 250);
+  }
+  /* Style the navigation bar links */
+  .navbar a {
+  float: left;
+  color: rgb(12, 11, 11);
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: 20px;
+  }
+  
+  /* Change color on hover */
+  .navbar a:hover {
+  background-color: #ddd;
+  color: rgb(238, 230, 230);
+  }
+  /* Column container */
+  .row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  }
+  p, h3, h5{
+  color: rgb(19, 18, 18);
+
+  }
+  h4{
+  color: rgb(17, 17, 17);
+  text-align: center;
+  }
+  h2{
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  }
+  h6{
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    font-style:normal;
+    text-align: center;
+  }
+  /* Main column */
+  .main {
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: #724d6d;
+  padding: 20px;
+  }
+  .side {
+  margin-left: auto;
+  margin-right: auto;
+  
+  }
+  /* Fake image, just for this example */
+  .fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+  }
+  /* Footer */
+  .footer {
+  
+  text-align: center;
+  background: rgb(165, 129, 180);
+  }
+  /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top
+  of each other instead of next to each other */
+  @media screen and (max-width: 700px) {
+  .row {
+  flex-direction: column;
+  }
+  }
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on
+  top of each other instead of next to each other */
+  @media screen and (max-width: 400px) {
+  .navbar a {
+  float: none;
+  width: 100%;
+  }
+  }
+  .columns {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+  }
+  /* Float four columns side by side */
+  .column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+  }
+  /* Remove extra left and right margins, due to padding */
+  .row {margin: 0 -5px;}
+  /* Clear floats after the columns */
+  .row:after {
+  content: "";
+  display: table;
+  clear: both;
+  }
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+  .column {
+  width: 100%;
+  display: block;
+  margin-bottom: 20px;
+  }
+  }
+  /* Style the counter cards */
+  .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  }
+  * {box-sizing: border-box}
+  body {font-family: Verdana, sans-serif; margin:0}
+  .mySlides {display: none}
+  img {vertical-align: middle;}
+  /* Slideshow container */
+  .slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+  }
+  /* Next & previous buttons */
+  .prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  }
+  /* Position the "next button" to the right */
+  .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  }
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  }
+  /* Caption text */
+  .text {
+  color: #afa9a9;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  }
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #afa9a9;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  }
+  /* The dots/bullets/indicators */
+  .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  }
+  .active, .dot:hover {
+  background-color: #717171;
+  }
+  /* Fading animation */
+  .fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+  }
+  @-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+  }
+  @keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+  }
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+  }
+  #team
+  {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: #555;
+  }
+  .center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  }
+  p{
+  text-align: center;
+  }
+  h1
+  {
+  text-align: center;
+  color: rgb(255, 255, 255)!important;
+  padding-bottom: 10px;
+  }
+  
+  .profile-pic .img-box
+  {
+  opacity: 1;
+  display: block;
+  position: relative;
+  }
+  .profile-pic .img-box img
+  {
+  filter: grayscale(1);
+  }
+  .profile-pic .img-box img:hover
+  {
+  filter: grayscale(0);
+  cursor: pointer;
+  }
+  .profile-pic h2
+  {
+  font-size: 22px;
+  font-weight: bold;
+  margin-top:15px;
+  color: #cee3f8!important;
+  }
+  .profile-pic h3
+  {
+  font-size: 15px;
+  font-weight: bold;
+  margin-top:15px;
+  color: black;
+  }
+  #team .fa
+  {
+  height:25px;
+  width: 25px;
+  color: #abc3db !important;
+  background: #fff;
+  padding: 4px;
+  border-radius: 50%;
+  }
+  
+  .img-box ul
+  {
+  padding: 15px 0;
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  }
+  .img-box ul li
+  {
+  padding: 5px;
+  display: inline-block;
+  }
+  .img-box:hover ul
+  {
+  opacity: 1;
+  }
+  .img-box ul, .img-box ul
+  {
+  transition: 0.5s;
+  }
+  .img-responsive
+  {
+  height: 250px;
+  width: 200px;
+  margin: 0px 220px;
+  }
+  .row {  
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .container {
+    position: relative;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box; }
+  .column,
+  .columns {
+    width: 100%;
+    float: left;
+    box-sizing: border-box; }
+  
+  /* For devices larger than 400px */
+  @media (min-width: 400px) {
+    .container {
+      width: 85%;
+      padding: 0; }
+  }
+  
+  /* For devices larger than 550px */
+  @media (min-width: 550px) {
+    .container {
+      width: 80%; }
+    .column,
+    .columns {
+      margin-left: 4%; }
+    .column:first-child,
+    .columns:first-child {
+      margin-left: 0; }
+  
+    .one.column,
+    .one.columns                    { width: 4.66666666667%; }
+    .two.columns                    { width: 4.66666666667%; }
+    .three.columns                  { width: 4.66666666667%;            }
+    .four.columns                   { width: 30.6666666667%; }
+    .five.columns                   { width: 39.3333333333%; }
+    .six.columns                    { width: 48%;            }
+    .seven.columns                  { width: 56.6666666667%; }
+    .eight.columns                  { width: 65.3333333333%; }
+    .nine.columns                   { width: 74.0%;          }
+    .ten.columns                    { width: 82.6666666667%; }
+    .eleven.columns                 { width: 91.3333333333%; }
+    .twelve.columns                 { width: 100%; margin-left: 0; }
+  
+    .one-third.column               { width: 30.6666666667%; }
+    .two-thirds.column              { width: 65.3333333333%; }
+  
+    .one-half.column                { width: 48%; }
+  
+    /* Offsets */
+    .offset-by-one.column,
+    .offset-by-one.columns          { margin-left: 8.66666666667%; }
+    .offset-by-two.column,
+    .offset-by-two.columns          { margin-left: 17.3333333333%; }
+    .offset-by-three.column,
+    .offset-by-three.columns        { margin-left: 26%;            }
+    .offset-by-four.column,
+    .offset-by-four.columns         { margin-left: 34.6666666667%; }
+    .offset-by-five.column,
+    .offset-by-five.columns         { margin-left: 43.3333333333%; }
+    .offset-by-six.column,
+    .offset-by-six.columns          { margin-left: 52%;            }
+    .offset-by-seven.column,
+    .offset-by-seven.columns        { margin-left: 60.6666666667%; }
+    .offset-by-eight.column,
+    .offset-by-eight.columns        { margin-left: 69.3333333333%; }
+    .offset-by-nine.column,
+    .offset-by-nine.columns         { margin-left: 78.0%;          }
+    .offset-by-ten.column,
+    .offset-by-ten.columns          { margin-left: 86.6666666667%; }
+    .offset-by-eleven.column,
+    .offset-by-eleven.columns       { margin-left: 95.3333333333%; }
+  
+    .offset-by-one-third.column,
+    .offset-by-one-third.columns    { margin-left: 34.6666666667%; }
+    .offset-by-two-thirds.column,
+    .offset-by-two-thirds.columns   { margin-left: 69.3333333333%; }
+  
+    .offset-by-one-half.column,
+    .offset-by-one-half.columns     { margin-left: 52%; }
+  
+  }
+  #courses-list .row {
+    margin-bottom:20px;
+}
+  .add-to-cart {
+    margin:10px 0;
+}
+.card {
+    text-align: center;
+    border: 1px solid #e1e1e1;
+    background: white;
+}
+@media (min-width: 550px) {
+    .card {
+        text-align: left;
+    }
+}
+.info-card  {
+    padding: 10px 20px;
+}
+.info-card p,
+.card h4 {
+    margin-bottom: 5px;
+}
+.info-card .price {
+    text-decoration: line-through;
+    font-size: 18px;
+    margin-top: 10px;
+}
+.info-card .price span {
+    font-weight: 700;
+    font-size: 22px;
+}
+.u-full-width {
+    width: 100%;
+    box-sizing: 100%; }
+  .u-max-full-width {
+    max-width: 100%;
+    box-sizing: 100%; }
+  .u-pull-right {
+    float: right; }
+  .u-pull-left {
+    float: left; }
+
+    .container2 {
+      padding: 0 16px;
+  }
+
+  .container2::after,
+  .row::after {
+      content: "";
+      clear: both;
+      display: table;
+  }
+  .card2 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+}
+.column2 {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.about-section {
+  padding: 10px;
+  text-align: center;
+  font-family: Helvetica;
+  color: black;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}

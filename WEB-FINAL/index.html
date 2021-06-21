@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <!--start of page 1 which ishome page-->
+    <div data-role="page" id="page1">
+        <div class="header">
+            <img src="image/laptop.png" width="35%" height="30%" alt="Italian Trulli">
+            <h1>Master Technology</h1>
+        </div>
+        <!--Navigation bar-->
+        <div class="main" class="ui-content">
+            <div class="navbar">
+                <a href="#page1">Home</a>
+                <a href="#page2">Laptops</a>
+                <a href="#page3">Order Form</a>
+                <a href="#page4">Contact us</a>
+            </div>
+        </div>
+        <h6>Home</h6><br><br>
+
+        <!--Slideshow-->
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 5</div>
+                <img src="image/HUAWEI.png" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 5</div>
+                <img src="image/HP.png" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 5</div>
+                <img src="image/LENOVO.png" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 5</div>
+                <img src="image/ACER.png" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 5</div>
+                <img src="image/HUAWEI.png" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        <p><b>Laptops with reasonable price</b></p>
+        <p>Master Technology was founded in 2010 and has quickly grown to become one of the Malaysia's leading
+            retailers of latest technology products.<br> We are located in a large head office in Selangor where we can
+            operate
+            quickly and efficiently in order to serve the demands of our ever growing customer base!<br>Our goal is
+            simple,
+            <br>"To bring our customers exceptional technology from the leading brands at the best prices."<br>
+
+            We are able to achieve this through seamless integration of:
+        </p>
+        <img src="image/TEAMWORK.jpg" style="width: 30%;" class="center">
+        <p>Vast experience of our management in tech retail industry</p>
+        <img src="image/RELATIONSHIP.jpg" style="width:30%;" class="center">
+        <p>Long standing business relationships with manufacturers</p>
+        <img src="image/MAINTENANCE.jpg" style="width:30%;" class="center">
+        <p>Team of experts with hands on tech knowledge</p>
+        <img src="image/SERVICE.png" style="width:30%;" class="center">
+        <p>Providing great customer service</p><br>
+        <p>
+            Laptops? <br>With a wide range of gadgets available in the market, it often gets confusing to
+            differentiate one product from its competitor or to choose one that best meets your requirements.
+            This is where Master Tech steps in. At Master Tech, we take pride in helping you buy. It is our
+            constant endeavour to understand your needs and help you find the product best suited for You!
+            Because, a purchase is just the first step to a relationship that will last for years to come.
+        </p>
+
+        <div class="footer">
+            <h3>Copyright © Master Technology Sdn Bhd</h3>
+        </div>
+    </div>
+    <!--start of page 2 which is gallery page-->
+    <div data-role="page" id="page2">
+        <div class="header">
+            <img src="image/laptop.png" width="35%" height="30%" alt="Italian Trulli">
+            <h1>Master Technology</h1>
+        </div>
+        <div class="main" class="ui-content">
+            <div class="navbar">
+                <a href="#page1">Home</a>
+                <a href="#page2">Laptops</a>
+                <a href="#page3">Order Form</a>
+                <a href="#page4">Contact us</a>
+
+            </div>
+        </div>
+        <h6>Laptops</h6>
+
+        <div id="courses-list" class="container">
+            <div class="row">
+                <div class="four columns">
+                    <div class="card">
+                        <img src="image/acerspin5.png" class="course-image u-full-width">
+                        <div class="info-card">
+                            <h4>Acer Spin 5</h4>
+                            <p>High performance</p>
+                            <center><img src="image/stars.png"></center>
+                            <p class="price">RM 4500 <span class="u-pull-right ">RM 4000</span></p>
+                            <a href="#page3" class="u-full-width button-primary button input add-to-cart"
+                                data-id="1">Add to Cart</a>
+                        </div>
+                    </div>
+                    <!--.card-->
+                </div>
+                <div class="four columns">
+                    <div class="card">
+                        <img src="image/acerswift.jpg" class="course-image u-full-width">
+                        <div class="info-card">
+                            <h4>Acer Swift</h4>
+                            <p>HD Resolution</p>
+                            <center><img src="image/stars.png"></center>
+                            <p class="price">RM 3000 <span class="u-pull-right ">RM 2600</span></p>
+                            <a href="#page3" class="u-full-width button-primary button input add-to-cart"
+                                data-id="2">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="four columns">
+                    <div class="card">
+                        <img src="image/asusvivobook.png" class="course-image u-full-width">
+                        <div class="info-card">
+                            <h4>Asus Vivo Book</h4>
+                            <p>Free SSD</p>
+                            <center><img src="image/stars.png"></center>
+                            <p class="price">RM 2550 <span class="u-pull-right ">RM 2300</span></p>
+                            <a href="#page3" class="u-full-width button-primary button input add-to-cart"
+                                data-id="3">Add to Cart</a>
+                        </div>
+                    </div>
+                    <!--.card-->
+                </div>
+
+            </div>
+            <!--.row-->
+            <div class="row">
+                <div class="four columns">
+                    <div class="card">
+                        <img src="image/dellinspiron15.jpg" class="course-image u-full-width">
+                        <div class="info-card">
+                            <h4>Dell Inspiron 15</h4>
+                            <p>Intel UHD 620</p>
+                            <center><img src="image/stars.png"></center>
+                            <p class="price">RM 3500 <span class="u-pull-right ">RM 3290</span></p>
+                            <a href="#page3" class="u-full-width button-primary button input add-to-cart"
+                                data-id="4">Add to Cart</a>
+                        </div>
+                    </div>
+                    <!--.card-->
+                </div>
+                <div class="four columns">
+                    <div class="card">
+                        <img src="image/dellxps.jpg" class="course-image u-full-width">
+                        <div class="info-card">
+                            <h4>Dell XPS</h4>
+                            <p>Iris Plus 650</p>
+                            <center><img src="image/stars.png"></center>
+                            <p class="price">RM 3330 <span class="u-pull-right ">RM 3000</span></p>
+                            <a href="#page3" class="u-full-width button-primary button input add-to-cart"
+                                data-id="5">Add to Cart</a>
+                        </div>
+                    </div>
+                    <!--.card-->
+                </div>
+                <div class="four columns">
+                    <div class="card">
+                        <img src="image/gigabyteaero.jpg" class="course-image u-full-width">
+                        <div class="info-card">
+                            <h4>Gigabyte Aero</h4>
+                            <p>Intel HD 620</p>
+                            <center><img src="image/stars.png"></center>
+                            <p class="price">RM 2760 <span class="u-pull-right ">RM 2500</span></p>
+                            <a href="#page3" class="u-full-width button-primary button input add-to-cart"
+                                data-id="6">Add to Cart</a>
+                        </div>
+                    </div>
+                    <!--.card-->
+                </div>
+            </div>
+            <!--.row-->
+            <div class="row">
+                <div class="four columns">
+                    <div class="card">
+                        <img src="image/hpspectre.jpg" class="course-image u-full-width">
+                        <div class="info-card">
+                            <h4>HP Spectre</h4>
+                            <p> Intel UHD 620</p>
+                            <center><img src="image/stars.png"></center>
+                            <p class="price">RM 2330 <span class="u-pull-right ">RM 2000</span></p>
+                            <a href="#page3" class="u-full-width button-primary button input add-to-cart"
+                                data-id="7">Add to Cart</a>
+                        </div>
+                    </div>
+                    <!--.card-->
+                </div>
+                <div class="four columns">
+                    <div class="card">
+                        <img src="image/huaweimatebook.jpg" class="course-image u-full-width">
+                        <div class="info-card">
+                            <h4>Huawei Matebook</h4>
+                            <p>Intel HD 620</p>
+                            <center><img src="image/stars.png"></center>
+                            <p class="price">RM 3500 <span class="u-pull-right ">RM 3200</span></p>
+                            <a href="#page3" class="u-full-width button-primary button input add-to-cart"
+                                data-id="8">Add to Cart</a>
+                        </div>
+                    </div>
+                    <!--.card-->
+                </div>
+                <div class="four columns">
+                    <div class="card">
+                        <img src="image/lenthinkpad.jpeg" class="course-image u-full-width">
+                        <div class="info-card">
+                            <h4>Lenovo Thinkpad</h4>
+                            <p> Intel UHD 620</p>
+                            <center><img src="image/stars.png"></center>
+                            <p class="price">RM 2700 <span class="u-pull-right ">RM 2500</span></p>
+                            <a href="#page3" class="u-full-width button-primary button input add-to-cart"
+                                data-id="9">Add to Cart</a>
+                        </div>
+                    </div>
+                    <!--.card-->
+                </div>
+            </div>
+            <!--.row-->
+            <div class="row">
+                <div class="four columns">
+                    <div class="card">
+                        <img src="image/lenyogaslim7.png" class="course-image u-full-width">
+                        <div class="info-card">
+                            <h4>Lenovo Yoga Slim 7</h4>
+                            <p>Free SSD</p>
+                            <center><img src="image/stars.png"></center>
+                            <p class="price">RM 4300 <span class="u-pull-right ">RM 3999</span></p>
+                            <a href="#page3" class="u-full-width button-primary button input add-to-cart"
+                                data-id="10">Add to Cart</a>
+                        </div>
+                    </div>
+                    <!--.card-->
+                </div>
+                <div class="four columns">
+                    <div class="card">
+                        <img src="image/microsoftsurfacepro.jpg" class="course-image u-full-width">
+                        <div class="info-card">
+                            <h4>Microsoft Srface Pro</h4>
+                            <p>Intel HD 620</p>
+                            <center><img src="image/stars.png"></center>
+                            <p class="price">RM 2500 <span class="u-pull-right ">RM 2350</span></p>
+                            <a href="#page3" class="u-full-width button-primary button input add-to-cart"
+                                data-id="11">Add to Cart</a>
+                        </div>
+                    </div>
+                    <!--.card-->
+                </div>
+                <div class="four columns">
+                    <div class="card">
+                        <img src="image/razorbladepro17.jpg" class="course-image u-full-width">
+                        <div class="info-card">
+                            <h4>Razer Blade Pro 17</h4>
+                            <p> Intel UHD 620</p>
+                            <center><img src="image/stars.png"></center>
+                            <p class="price">RM 5000 <span class="u-pull-right ">RM 4750</span></p>
+                            <a href="#page3" class="u-full-width button-primary button input add-to-cart"
+                                data-id="12">Add to chart</a>
+                        </div>
+                    </div>
+                    <!--.card-->
+                </div>
+            </div>
+            <!--.row-->
+        </div>
+
+    </div>
+    <div class="footer">
+        <h3>Copyright © Master Technology Sdn Bhd</h3>
+    </div>
+    </div>
+    <!--start of page 3 which is order form page-->
+    <div data-role="page" id="page3">
+        <div class="header">
+            <img src="image/laptop.png" width="35%" height="30%" alt="Italian Trulli">
+            <h1>Master Technology</h1>
+        </div>
+        <div class="main" class="ui-content">
+            <div class="navbar">
+                <a href="#page1">Home</a>
+                <a href="#page2">Laptops</a>
+                <a href="#page3">Order Form</a>
+                <a href="#page4">Contact us</a>
+            </div>
+
+        </div>
+        <h6>Order Form</h6>
+        <form action="#detail" method="GET" onsubmit="return mySubmit();">
+            <label for="name">Name:</label>
+            <input placeholder="Full Name" type="text" name="name" id="name" value="" required>
+            <label for="phoneNum">Phone Number:</label>
+            <input placeholder="Phone Number" type="number" name="phoneNum" id="phoneNum" value="" required>
+            <label for="address">Address:</label>
+            <input style="height: 100px" placeholder="Delivery Address" type="text" name="address" id="address" value=""
+                required>
+            <label for="email">Email:</label>
+            <input placeholder="Email Address" type="text" name="email" id="email" value="" required>
+            <br><br>
+            <label for="payment">Payment Method:</label>
+            <select name="payment" id="payment">
+                <option value="COD">Cash On Delivery</option>
+                <option value="online banking">Online Banking</option>
+            </select>
+        </form>
+        </form>
+        <center>
+            <table width="80%" border="1" cellpadding="3" id="calculator" onsubmit="return CalculateItemsValue();">
+                <tr>
+                    <td width="100"><strong>Laptop</strong></td>
+                    <td width="100"><strong>Quantity</strong></td>
+                    <td width="150"><strong>Price</strong></td>
+                </tr>
+                <tr>
+                    <td>Razer Blade Pro 17</td>
+
+                    <td>
+                        <input name="qnt_1" type="text" id="qnt_1" value="0" size="3" data-price="4750"
+                            onkeyup="CalculateItemsValue()" />
+                    </td>
+                    <td>RM 4750</td>
+                </tr>
+                <tr>
+                    <td>Acer Spin</td>
+
+                    <td><input name="qnt_2" type="text" id="qnt_2" value="0" size="3" data-price="4000"
+                            onkeyup="CalculateItemsValue()" /></td>
+                    <td>RM 4000</td>
+                </tr>
+                <tr>
+                    <td>Acer Swift</td>
+
+                    <td><input name="qnt_3" type="text" id="qnt_3" value="0" size="3" data-price="2600"
+                            onkeyup="CalculateItemsValue()" /></td>
+                    <td>RM 2600</td>
+                </tr>
+                <tr>
+                    <td>Asus Vivo Book</td>
+
+                    <td><input name="qnt_4" type="text" id="qnt_4" value="0" size="3" data-price="2300"
+                            onkeyup="CalculateItemsValue()" /></td>
+                    <td>RM 2300</td>
+                </tr>
+                <tr>
+                    <td>Dell Inspiron 15</td>
+
+                    <td><input name="qnt_5" type="text" id="qnt_5" value="0" size="3" data-price="3290"
+                            onkeyup="CalculateItemsValue()" /></td>
+                    <td>RM3290</td>
+                </tr>
+                <tr>
+                    <td>Dell XPS</td>
+
+                    <td><input name="qnt_6" type="text" id="qnt_6" value="0" size="3" data-price="3000"
+                            onkeyup="CalculateItemsValue()" /></td>
+                    <td>RM 3000</td>
+                </tr>
+                <tr>
+                    <td>Gigabyte Aero</td>
+
+                    <td><input name="qnt_7" type="text" id="qnt_7" value="0" size="3" data-price="2500"
+                            onkeyup="CalculateItemsValue()" /></td>
+                    <td>RM 2500</td>
+                </tr>
+                <tr>
+                    <td>HP Spectre</td>
+
+                    <td><input name="qnt_8" type="text" id="qnt_8" value="0" size="3" data-price="2000"
+                            onkeyup="CalculateItemsValue()" /></td>
+                    <td>RM 2000</td>
+                </tr>
+                <tr>
+                    <td>Huawei Matebook</td>
+
+                    <td><input name="qnt_9" type="text" id="qnt_9" value="0" size="3" data-price="3200"
+                            onkeyup="CalculateItemsValue()" /></td>
+                    <td>RM 3200</td>
+                </tr>
+                <tr>
+                    <td>Lenovo Thinkpad</td>
+
+                    <td><input name="qnt_10" type="text" id="qnt_10" value="0" size="3" data-price="2500"
+                            onkeyup="CalculateItemsValue()" /></td>
+                    <td>RM 2500</td>
+                </tr>
+                <tr>
+                    <td>Lenovo Yoga Slim 7</td>
+
+                    <td><input name="qnt_11" type="text" id="qnt_11" value="0" size="3" data-price="3999"
+                            onkeyup="CalculateItemsValue()" /></td>
+                    <td>RM 3999</td>
+                </tr>
+                <tr>
+                    <td>Microsoft Surface Pro</td>
+
+                    <td><input name="qnt_12" type="text" id="qnt_12" value="0" size="3" data-price="2350"
+                            onkeyup="CalculateItemsValue()" /></td>
+                    <td>RM 2350</td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td align="right"><strong>Grand Total:</strong></td>
+                    <td><strong>
+                            <div id="ItemsTotal">RM0</div>
+                        </strong></td>
+                </tr>
+            </table>
+        </center>
+        <br>
+        <input type="submit" value="Buy" onclick="mySubmit()">
+        </form>
+    </div>
+    </div>
+    <!--start of detail page-->
+    <div data-role="page" id="detail">
+        <div class="header">
+            <img src="image/laptop.png" width="320px" height="200px" alt="Italian Trulli">
+            <h1>Master Technology</h1>
+        </div>
+        <div class="main" class="ui-content">
+            <div class="navbar">
+                <a href="#page1">Home</a>
+                <a href="#page2">Laptops</a>
+                <a href="#page3">Order Form</a>
+                <a href="#page4">Contact us</a>
+            </div>
+
+        </div>
+        <h6>Details</h6>
+        <div class="main" class="ui-content">
+            <form action="#detail" method="GET" class="">
+                <div class="side">
+                    <center>
+                        <table border="1" width="50%">
+                            <tr>
+                                <td><b>Name</b></td>
+                                <td width="40%"><span id="fname"></span></td>
+                            </tr>
+                            <tr>
+                                <td><b>Phone Number</b></td>
+                                <td width="40%"><span id="phone"></span></td>
+                            </tr>
+                            <tr>
+                                <td><b>Address</b></td>
+                                <td width="40%"><span id="addr"></span></td>
+                            </tr>
+                            <tr>
+                                <td><b>Email</b></td>
+                                <td width="40%"><span id="mail"></span></td>
+                            </tr>
+                            <tr>
+                                <td><b>Result</b></td>
+                                <td width="40%"><span id="result"></span></td>
+                            </tr>
+                            <tr>
+                                <td><b>Grand Total</b></td>
+                                <td width="40%"><span id="GrandTotal"></span></td>
+                            </tr>
+                        </table>
+                    </center>
+            </form>
+        </div>
+    </div>
+    </div>
+    <div data-role="page" id="page4">
+        <div class="header">
+            <img src="image/laptop.png" width="320px" height="200px" alt="Italian Trulli">
+            <h1>Master Technology</h1>
+        </div>
+        <div class="main" class="ui-content">
+            <div class="navbar">
+                <a href="#page1">Home</a>
+                <a href="#page2">Laptops</a>
+                <a href="#page3">Order Form</a>
+                <a href="#page4">Contact us</a>
+            </div>
+        </div>
+        <h6>Contact Us</h6>
+        <!-----Team------->
+        <div class="about-section">
+            <h3>Please select a topic below related to your inquiry. If you
+                <br>don't find what you need, feel free to contact us.
+            </h3>
+        </div>
+
+        <div class="row2">
+            <center>
+                <div class="column2">
+                    <div class="card2">
+                        <div class="container2">
+
+                            <img src="image/NITYA.jpeg" alt="John" style="width:50%">
+
+                            <h2>NITYA D/O SATHU OM</h2>
+                            <p class="title">18DDT19F1045</p>
+                            <p>In-charged of Javascript</p>
+                        </div>
+                        <div data-role="content" class="ui-content">
+
+
+                            <div class="button"><a class="ui-btn ui-btn-inline" href="tel:+0125176084">CALL</a>
+                                <a class="ui-btn ui-btn-inline" href="mailto:nityasathu123@gmail.com">EMAIL</a>
+                                <a class="ui-btn ui-btn-inline" href="sms://+0125176084">WHATSAPP</a>
+                            </div>
+                        </div>
+                    </div>
+            </center>
+
+        </div>
+        <center>
+            <div class="column2">
+                <div class="card2">
+
+                    <div class="container2">
+                        <img src="image/AIN.jpeg" alt="John" style="width:50%">
+                        <h2>AIN NAZZIATUL A’LIAH BINTI FADZIL</h2>
+                        <p class="title">18DDT19F1149</p>
+                        <p>In-charged of CSS</p>
+                    </div>
+                    <div data-role="content" class="ui-content">
+
+
+                        <div class="button"><a class="ui-btn ui-btn-inline" href="tel:+0142673989">CALL</a>
+                            <a class="ui-btn ui-btn-inline" href="mailto: ainnazziatul211@gmail.com ">EMAIL</a>
+                            <a class="ui-btn ui-btn-inline" href="sms://+0142673989">WHATSAPP</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </center>
+        <center>
+            <div class="column2">
+                <div class="card2">
+                    <div class="container2">
+                        <img src="image/FARAH.jpeg" alt="John" style="width:50%">
+                        <h2>NOR FARAH SABRINA BINTI ROSLI</h2>
+                        <p class="title">18DDT19F1067</p>
+                        <p>In-charged of HTML</p>
+                    </div>
+                    <div data-role="content" class="ui-content">
+
+
+                        <div class="button"><a class="ui-btn ui-btn-inline" href="tel:+0195498053">CALL</a>
+                            <a class="ui-btn ui-btn-inline" href="mailto: sabrinafarah01@gmail.com">EMAIL</a>
+                            <a class="ui-btn ui-btn-inline" href="sms://+0195498053">WHATSAPP</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </center>
+
+    </div>
+
+</body>
+
+</html>
